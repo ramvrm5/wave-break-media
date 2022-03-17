@@ -1,22 +1,26 @@
-/* import React from 'react';
+import React from 'react';
+
 import ReactDOM from 'react-dom';
+import { render } from '@testing-library/react';
+
+
+
+import ShallowRenderer from 'react-test-renderer/shallow';
 import ImageList from '../components/ImageList';
 
-import { render } from '@testing-library/react'; */
 
-describe('Testing sum', () => {
-    function sum(a, b) {
-       return a + b;
-    }
+const renderer = new ShallowRenderer();
+renderer.render(<ImageList />);
+const result = renderer.getRenderOutput();
 
-    it('should equal 4',()=>{
-       expect(sum(2,2)).toBe(4);
-      })
 
-    test('also should equal 4', () => {
-        expect(sum(2,2)).toBe(4);
-      }) 
-});
+describe("Normal Tests", () => {
+    it("should initialize page to 1", () => {
+        // check for initial state
+        expect(result.props.children[1].props.children.props.page).toEqual(1);
+    });
+})
+
 
 
 

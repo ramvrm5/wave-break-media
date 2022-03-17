@@ -18,6 +18,11 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.0"
   },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -40,6 +45,8 @@
     ]
   },
   "devDependencies": {
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.6",
     "jest": "^27.5.1"
   }
 }
