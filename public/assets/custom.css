@@ -1,0 +1,46 @@
+
+@font-face {
+    font-family:Sora-Thin;
+    src: url(../assets/Fonts/static/Sora-Thin.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-ExtraLight;
+    src: url(../assets/Fonts/static/Sora-ExtraLight.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-Light;
+    src: url(../assets/Fonts/static/Sora-Light.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-Regular;
+    src: url(../assets/Fonts/static/Sora-Regular.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-Medium;
+    src: url(../assets/Fonts/static/Sora-Medium.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-SemiBold;
+    src: url(../assets/Fonts/static/Sora-SemiBold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-Bold;
+    src: url(../assets/Fonts/static/Sora-Bold.ttf) format("opentype");
+}
+
+@font-face {
+    font-family:Sora-ExtraBold;
+    src: url(../assets/Fonts/static/Sora-ExtraBold.ttf) format("opentype");
+}
+
+.feedbackSection > div > button {
+    font-size: 18px !important;
+    padding: 0.7em 2em !important;
+    background: rgb(226 70 45) !important;
+}
